@@ -81,7 +81,7 @@ public class JpetStoreSteps {
 	@Then("A welcome message for user {string} is displayed")
 	public void a_welcome_message_for_user_is_displayed(String username) {
 		String weclometext = driver.findElement(By.id("WelcomeContent")).getText();
-		assertEquals("welcome message is as expected", "Weclome " + username + "!", weclometext);
+		assertEquals("welcome message is as expected", "Welcome " + username + "!", weclometext);
 		driver.quit();
 	}
 }
